@@ -12,7 +12,7 @@ For other distros see [Docker docs](https://docs.docker.com/install/)
 ### Build docker image
 Refer to latest [cosmos-sdk tags](https://github.com/cosmos/cosmos-sdk/tags)
 
-```sudo docker build --build-arg git_checkout_arg=v0.23.1 -t gaia .```
+```sudo docker build --build-arg TAG=v0.34.3 -t gaia .```
 
 ### Initialize gaiad
 ```sudo docker run -v /root/.gaiad:/root/.gaiad --rm -it gaia gaiad init --name my-node```

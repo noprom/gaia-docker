@@ -1,10 +1,10 @@
-FROM golang:1.10
+FROM golang:1.12.4
 
-ARG git_checkout_arg
+ARG TAG
 
 RUN go get github.com/cosmos/cosmos-sdk; \
     cd $GOPATH/src/github.com/cosmos/cosmos-sdk; \
-    git checkout $git_checkout_arg; \
+    git checkout $TAG; \
     make; \
     git checkout master;
 

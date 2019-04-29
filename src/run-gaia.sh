@@ -2,7 +2,7 @@
 
 set -x
 
-: ${GAIA_HOME:=/root/.gaiad}
+: ${GAIA_HOME:=/gaiad}
 
 if [ -n "$GAIAD_INIT" ]; then
   gaiad init --name $MONIKER --home $GAIA_HOME
